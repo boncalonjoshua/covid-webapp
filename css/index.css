@@ -1,0 +1,222 @@
+/* Landing Page CSS */
+
+body {
+  background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+}
+
+.register {
+  margin-top: 3%;
+  padding: 2%;
+}
+
+.register-left {
+  text-align: center;
+  color: #fff;
+  margin-top: 4%;
+}
+
+.register-left input {
+  border: none;
+  border-radius: 1.5rem;
+  padding: 2%;
+  width: 60%;
+  background: #f8f9fa;
+  font-weight: bold;
+  color: #383d41;
+  margin-top: 30%;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+
+.register-right {
+  background: #f8f9fa;
+  border-top-left-radius: 10% 50%;
+  border-bottom-left-radius: 10% 50%;
+}
+
+.register-left img {
+  margin-top: 15%;
+  margin-bottom: 5%;
+  width: 25%;
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(-20px);
+  }
+}
+
+@keyframes mover {
+  0% {
+      transform: translateY(0);
+  }
+
+  100% {
+      transform: translateY(-20px);
+  }
+}
+
+.register-left p {
+  font-weight: lighter;
+  padding: 12%;
+  margin-top: -9%;
+}
+
+.register .register-form {
+  padding: 10%;
+  margin-top: 10%;
+}
+
+.btnRegister {
+  float: right;
+  margin-top: 10%;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 2%;
+  background: #0062cc;
+  color: #fff;
+  font-weight: 600;
+  width: 50%;
+  cursor: pointer;
+}
+
+.register .nav-tabs {
+  margin-top: 3%;
+  border: none;
+  background: #0062cc;
+  border-radius: 1.5rem;
+  width: 28%;
+  float: right;
+}
+
+.register .nav-tabs .nav-link {
+  padding: 2%;
+  height: 34px;
+  font-weight: 600;
+  color: #fff;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.register .nav-tabs .nav-link:hover {
+  border: none;
+}
+
+.register .nav-tabs .nav-link.active {
+  width: 100px;
+  color: #0062cc;
+  border: 2px solid #0062cc;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+.register-heading {
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: -15%;
+  color: #495057;
+}
+
+.form-group {
+  padding-bottom: 20px;
+}
+
+/* End of Landing Page CSS */
+
+
+/* .counter{
+    color: #f27f21;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    height: 190px;
+    width: 190px;
+    padding: 30px 25px 25px;
+    margin: 0 auto;
+    border: 3px solid #f27f21;
+    border-radius: 20px 20px;
+    position: relative;
+    z-index: 1;
+  }
+  .counter:before,
+  .counter:after{
+    content: "";
+    background: #f3f3f3;
+    border-radius: 20px;
+    box-shadow: 4px 4px 2px rgba(0,0,0,0.2);
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    bottom: 15px;
+    right: 15px;
+    z-index: -1;
+  }
+  .counter:after{
+    background: transparent;
+    width: 100px;
+    height: 100px;
+    border: 15px solid #f27f21;
+    border-top: none;
+    border-right: none;
+    border-radius: 0 0 0 20px;
+    box-shadow: none;
+    top: auto;
+    left: -10px;
+    bottom: -10px;
+    right: auto;
+  }
+  .counter .counter-icon{
+    font-size: 35px;
+    line-height: 35px;
+    margin: 0 0 15px;
+    transition: all 0.3s ease 0s;
+  }
+  .counter:hover .counter-icon{ transform: rotateY(360deg); }
+  .counter .counter-value{
+    color: #555;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 20px;
+    margin: 0 0 20px;
+    display: block;
+    transition: all 0.3s ease 0s;
+  }
+  .counter:hover .counter-value{ text-shadow: 2px 2px 0 #d1d8e0; }
+  .counter h3{
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 15px;
+  }
+  .counter.blue{
+    color: #0043fe;
+    border-color: #0043fe;
+  }
+  .counter.blue:after{
+    border-bottom-color: #0043fe;
+    border-left-color: #0043fe;
+  }
+  .counter.pink{
+    color: crimson;
+    border-color: crimson;
+  }
+  .counter.pink:after{
+    border-bottom-color: crimson;
+    border-left-color: crimson;
+  }
+  .counter.purple{
+    color: purple;
+    border-color: purple;
+  }
+  .counter.purple:after{
+    border-bottom-color: purple;
+    border-left-color: purple;
+  }
+  @media screen and (max-width:990px){
+    .counter{ margin-bottom: 40px; }
+  } */
