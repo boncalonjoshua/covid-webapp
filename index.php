@@ -1,6 +1,11 @@
+<?php
+if(isset($_GET['logout'])){
+    session_start();
+    session_destroy();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,17 +13,21 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="css/index.css" rel="Stylesheet">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 
 <body>
+<?php include 'modals/loginPopup.php';?> <!--Login modal-->
     <div class="container register">
         <div class="row">
             <div class="col-md-3 register-left">
                 <img src="" alt="" />
                 <h3>Welcome</h3>
                 <p>Help our country to be healthy and COVID-Free. Fill-up your Covid declaration form now!</p>
-                <input type="submit" name="" value="Login" /><br />
+                <!--<input type="submit" name="" value="Login" /><br />-->
+                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#loginModal" style="border-radius: 20px;padding: 5px 60px 5px 60px;">
+                    Login
+                </button>
             </div>
             <div class="col-md-9 register-right">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">

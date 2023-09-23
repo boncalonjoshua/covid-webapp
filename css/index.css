@@ -129,7 +129,46 @@ body {
 
 /* End of Landing Page CSS */
 
+/* Other styles */
+#loginModalbg{
+  background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+}
 
+#loginModal .mb-3{
+  padding: 0px 20px 0px 20px;
+}
+#loginModal .modal-header{
+  border-bottom: 0px;
+}
+
+.btn-close{
+  padding: 5px 30px 5px 30px;
+  border-radius: 20px;
+}
+
+.btn-primary{
+  padding: 5px 30px 5px 30px;
+  border-radius: 20px;
+}
+
+.btn-warning{
+  padding: 5px 30px 5px 30px;
+  border-radius: 20px;
+}
+
+.btn-secondary{
+  padding: 5px 30px 5px 30px;
+  border-radius: 20px;
+}
+
+.btn-danger{
+  padding: 5px 30px 5px 30px;
+  border-radius: 20px;
+}
+
+.dashboard-header{
+  background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+}
 /* .counter{
     color: #f27f21;
     font-family: 'Open Sans', sans-serif;
