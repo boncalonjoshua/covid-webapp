@@ -1,27 +1,27 @@
-<?php 
+<?php
 
-    include 'connection.php';
+include 'connection.php';
 
-    // check database connection
-    if (!$connection)
-        die("Connection failed: " . mysqli_connect_error());
+// check database connection
+if (!$connection)
+    die("Connection failed: " . mysqli_connect_error());
 
-    $sql = "SELECT COUNT(id) AS remarksCount, remarks 
+$sql = "SELECT COUNT(id) AS remarksCount, remarks 
             FROM participants 
             WHERE remarks IN ('Finished', 'On-going', 'Canceled', 'Completed')
             GROUP BY remarks";
 
-    $result = mysqli_query($connection, $sql);
+$result = mysqli_query($connection, $sql);
 
-    $remarks = array();
+$remarks = array();
 
-    while ($row = mysqli_fetch_assoc($result)) {
-        $remarks[] = $row;
-    }
-    
-    header('Content-type: application/json');
-    echo json_encode($remarks);
+while ($row = mysqli_fetch_assoc($result)) {
+    $remarks[] = $row;
+}
 
-    mysqli_close($connection);
+header('Content-type: application/json');
+echo json_encode($remarks);
+
+mysqli_close($connection);
 
 ?>

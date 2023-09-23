@@ -1,12 +1,12 @@
-<?php 
+<?php
 
-    $dbhost = 'sql105.infinityfree.com';
-    $dbusername = 'if0_35081297';
-    $dbpassword = '@infinity@';
-    $dbname = 'if0_35081297_dict';
+$dbhost = 'localhost';
+$dbusername = 'root';
+$dbpassword = '';
+$dbname = 'covid_monitoring';
 
-    $connection = mysqli_connect($dbhost, $dbusername, $dbpassword, $dbname);
+$connection = mysqli_connect($dbhost, $dbusername, $dbpassword, $dbname);
 
-    // echo 'OK';
+// echo 'OK';
 
 ?>
