@@ -1,24 +1,51 @@
 <?php
 
 echo '
-    <!doctype html>
-    <html lang="en">
+      <!DOCTYPE html>
+      <html lang="en">
+
       <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-    
-        <!-- Bootstrap CSS -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-        <link href="./css/index.css" rel="stylesheet">
-
-        <title>DICT Training</title>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+              integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link href="css/index.css" rel="Stylesheet">
+          <title>Dashboard</title>
+          <style>
+              body {
+                  background: #fff;
+              }
+          </style>
       </head>
       <body>
-    
+      <body>
+    <nav class="navbar navbar-expand-sm dashboard-header">
+        <div class="container-fluid">
+            <img src="./images/covid.png" style="width: 40px; height: 40px;">
+            <a class="navbar-brand" href="#" style="color: #fff;">
+                CoViD-19 Monitoring</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" aria-current="page" href="dashboard.php">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="declaration_list.php" style="color: #fff;">Data List</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <input class="form-control me-2" type="search" id="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" onclick="searchDeclaration()">Search</button>
+                </div>
+            </div>
+        </div>
+    </nav>
       ';
 // <header class="p-3 bg-dark text-white">
 //   <div class="container">

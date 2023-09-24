@@ -60,11 +60,11 @@
         </div>
     </div>
 
-    <table class="table table-hover" id="participantsList">
+    <table class="table table-hover" id="declarationList">
         <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">FirstName</th>
+                <th scope="col">Fullname</th>
                 <th scope="col">LastName</th>
                 <th scope="col">Address</th>
                 <th scope="col">Gender</th>

@@ -9,11 +9,14 @@
             <div class="modal-body">
                 <div class="container">
                     <div class="row">
-                        <h3 style="color:#fff; text-align: center;margin-bottom: 15px;"><img src="./images/covid.png" class="col-md-4" style="text-align: center; width: 5%;"> CoViD-19 Monitoring App</h3>
+                        <h3 style="color:#fff; text-align: center;margin-bottom: 15px;"><img src="./images/covid.png"
+                                class="col-md-4" style="text-align: center; width: 5%;"> CoViD-19 Monitoring App</h3>
                         <div class="col-md-4" style="background-color: #fff; margin: auto; border-radius: 10px;">
                             <form action="./php/checkLogin.php" method="post">
                                 <div class="mb-3">
-                                    <h3 style="text-align: center;margin-top: 50px;margin-bottom: -20px; color:#495057;">Login</h3>
+                                    <h3
+                                        style="text-align: center;margin-top: 50px;margin-bottom: -20px; color:#495057;">
+                                        Login</h3>
                                 </div>
                                 <div class="mb-3">
                                     <label for="username" class="col-form-label">Username</label>

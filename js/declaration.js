@@ -16,7 +16,6 @@ btnSaveDeclaration.addEventListener('click', (e) => {
     
 
     let data = { full_name, age, mobile_no, vaccinated, encountered, diagnosed, nationality, gender, temperature }
-    console.log(data)
     addDeclaration(data)
 
     // if (btnSave.innerHTML === 'Save') {
@@ -29,7 +28,6 @@ btnSaveDeclaration.addEventListener('click', (e) => {
 })
 
 function addDeclaration(data) {
-console.log('data2', data)
     $.ajax({
         url: './php/addDeclaration.php',
         method: 'POST',
@@ -38,8 +36,6 @@ console.log('data2', data)
         success: (response) => {
             if (response) {
                 data.id = response
-                console.log(response)
-                //insertDataToTable(data);
             }
         }
     })

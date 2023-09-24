@@ -141,12 +141,11 @@ if (isset($_GET['logout'])) {
             </div>
         </div>
     </div>
-
-    </div>
     <script>
         // Example starter JavaScript for disabling form submissions if there are invalid fields
         (function () {
             'use strict'
+
             // Fetch all the forms we want to apply custom Bootstrap validation styles to
             var forms = document.querySelectorAll('.needs-validation')
 
@@ -158,6 +157,33 @@ if (isset($_GET['logout'])) {
                             event.preventDefault()
                             event.stopPropagation()
                         }
+                        else {
+                            let full_name = $('#inputFullName').val()
+                            let age = $('#inputAge').val()
+                            let mobile_no = $('#inputMobileNo').val()
+                            let vaccinated = $('#inputVaccinated:checked').val() ? 'Yes' : 'No'
+                            let encountered = $('#inputEncountered:checked').val() ? 'Yes' : 'No'
+                            let diagnosed = $('#inputDiagnosed:checked').val() ? 'Yes' : 'No'
+                            let nationality = $('#inputNationality').val()
+                            let temperature = $('#inputTemperature').val()
+                            let gender = $("input[type='radio'][name='gender']:checked").val()
+
+
+
+                            let data = { full_name, age, mobile_no, vaccinated, encountered, diagnosed, nationality, gender, temperature }
+                            $.ajax({
+                                url: './php/addDeclaration.php',
+                                method: 'POST',
+                                data: data,
+                                dataType: 'json',
+                                success: (response) => {
+                                    if (response) {
+                                        data.id = response
+                                        console.log(response)
+                                    }
+                                }
+                            })
+                        }
 
                         form.classList.add('was-validated')
                     }, false)
@@ -168,7 +194,7 @@ if (isset($_GET['logout'])) {
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 
     <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> -->
-    <script src="./js/declaration.js"></script>
+    <!-- <script src="./js/declaration.js"></script> -->
     <!-- <script src="./js/index.js"></script> -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
