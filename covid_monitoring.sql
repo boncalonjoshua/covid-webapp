@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 22, 2023 at 08:19 PM
+-- Generation Time: Sep 25, 2023 at 12:23 AM
 -- Server version: 10.4.13-MariaDB
 -- PHP Version: 7.3.19
 
@@ -45,8 +45,14 @@ CREATE TABLE `declaration` (
 --
 
 INSERT INTO `declaration` (`id`, `full_name`, `age`, `gender`, `mobile_no`, `temperature`, `vaccinated`, `diagnosed`, `encountered`, `nationality`) VALUES
-(1, 'Test User1', 75, 'Male', '09123456789', 36.5, 'Yes', 'No', 'No', '\'Filipino\''),
-(2, 'Test User2', 16, 'Male', '09234567890', 35.8, 'Yes', 'No', 'Yes', 'Filipino');
+(1, 'Joshua Boncalon 1', 30, 'Male', '09123456789', 36.5, 'Yes', 'No', 'Yes', 'Filipino'),
+(2, 'Test User2', 16, 'Male', '09234567890', 35.8, 'Yes', 'No', 'Yes', 'Filipino'),
+(3, 'Test Data3', 30, 'Female', '09123456789', 38.8, 'No', 'No', 'Yes', 'Indian'),
+(5, 'Joshua Mhel', 30, 'Male', '12312431234134', 45, 'Yes', 'No', 'No', 'White'),
+(6, 'wertw1', 2, 'Male', '1232312312312312', 23, 'Yes', 'No', 'No', 'sdfgsdfg'),
+(7, 'asdfadfadf2', 3, 'Male', '2345234523452345', 23, 'Yes', 'No', 'No', 'gsdfgs23'),
+(21, 'Joshua Mhel2', 33, 'Male', '123456776534', 0, 'Yes', 'No', 'No', 'fdgdfg'),
+(44, 'Eushe Boncalon', 28, 'Female', '09199552829', 36, 'Yes', 'No', 'No', 'Filipino');
 
 -- --------------------------------------------------------
 
@@ -91,7 +97,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `declaration`
 --
 ALTER TABLE `declaration`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=45;
 
 --
 -- AUTO_INCREMENT for table `users`

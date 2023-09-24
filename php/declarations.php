@@ -28,17 +28,21 @@ if (isset($_GET['delete'])) {
 
 if (isset($_GET['id'])) {
 
-    if (intval($_GET['id']) > 0) {
-        $sql = "SELECT * FROM declaration WHERE id = " . $_GET['id'];
-        $result = mysqli_query($connection, $sql);
-        $declarations[] = mysqli_fetch_assoc($result);
-    } else {
-        $sql = "SELECT * FROM declaration";
-        $result = mysqli_query($connection, $sql);
-        $declarations = array();
-        while ($row = mysqli_fetch_assoc($result)) {
-            $declarations[] = $row;
-        }
+    $sql = "SELECT * FROM declaration WHERE id = " . $_GET['id'];
+    $result = mysqli_query($connection, $sql);
+    $declarations[] = mysqli_fetch_assoc($result);
+
+    header('Content-type: application/json');
+    echo json_encode($declarations);
+
+}
+
+if (isset($_GET['all'])) {
+    $sql = "SELECT * FROM declaration ";
+    $result = mysqli_query($connection, $sql);
+    $declarations = array();
+    while ($row = mysqli_fetch_assoc($result)) {
+        $declarations[] = $row;
     }
     header('Content-type: application/json');
     echo json_encode($declarations);

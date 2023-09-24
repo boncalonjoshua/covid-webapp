@@ -170,6 +170,18 @@ body {
   background: -webkit-linear-gradient(left, #3931af, #00c6ff);
   color: white;
 }
+
+.my-card
+{
+    position:absolute;
+    left:40%;
+    top:-20px;
+    border-radius:50%;
+}
+
+.stat-card-container {
+  margin-bottom: 25px;
+}
 /* .counter{
     color: #f27f21;
     font-family: 'Open Sans', sans-serif;

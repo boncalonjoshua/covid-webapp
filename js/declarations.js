@@ -3,8 +3,8 @@
 function getDeclarations() {
 
     $.ajax({
-        url: './php/declarations.php?id='+-1,
-        method: 'POST',
+        url: './php/declarations.php?all=True',
+        method: 'GET',
         data: {},
         dataType: 'json',
         success: (response) => {

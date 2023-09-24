@@ -46,9 +46,8 @@ if (isset($_GET['logout'])) {
                                         placeholder="Age*" required />
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" minlength="11" maxlength="16" name="mobile_no" id="inputMobileNo"
-                                        class="form-control" placeholder="Phone No. (+63-9xx-xxx-xxxx)" value=""
-                                        required />
+                                    <input type="text" minlength="11" maxlength="11" name="mobile_no" id="inputMobileNo"
+                                        class="form-control" placeholder="Phone No. (09xxxxxxxxx)" value="" required />
                                 </div>
                                 <div class="form-group">
                                     <input type="text" class="form-control" name="nationality" id="inputNationality"
