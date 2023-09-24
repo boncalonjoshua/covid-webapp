@@ -1,14 +1,10 @@
 <?php include('common/header.php') ?>
 
-  <div class="container">
+<div class="container">
     <h1>This is participants page.</h1>
 
     <!-- Button trigger modal -->
-    <button 
-        type="button" 
-        class="btn btn-primary" 
-        data-bs-toggle="modal" 
-        data-bs-target="#addModalForm"
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#addModalForm"
         onclick="formClear()">
         Add new participants
     </button>
@@ -56,7 +52,7 @@
                     </div>
                 </div>
                 <div class="modal-footer">
-                     
+
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="submit" class="btn btn-primary" id="btnSave">Save</button>
                 </div>
@@ -65,24 +61,24 @@
     </div>
 
     <table class="table table-hover" id="participantsList">
-      <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">FirstName</th>
-            <th scope="col">LastName</th>
-            <th scope="col">Address</th>
-            <th scope="col">Gender</th>
-            <th scope="col">Agency</th>
-            <th scope="col">Email</th>
-            <th scope="col">Remarks</th>
-            <th scope="col">ACTION</th>
-        </tr>
-    </thead>
-    <tbody>
-        
-    </tbody>
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">FirstName</th>
+                <th scope="col">LastName</th>
+                <th scope="col">Address</th>
+                <th scope="col">Gender</th>
+                <th scope="col">Agency</th>
+                <th scope="col">Email</th>
+                <th scope="col">Remarks</th>
+                <th scope="col">ACTION</th>
+            </tr>
+        </thead>
+        <tbody>
 
-  </table>
-  </div>
+        </tbody>
 
-<?php include('common/footer.php') ?> 
+    </table>
+</div>
+
+<?php include('common/footer.php') ?>

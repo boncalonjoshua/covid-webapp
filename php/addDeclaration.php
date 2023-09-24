@@ -14,16 +14,15 @@ function validate_input($data)
     return $data;
 }
 
-$full_name = validate_input($_POST['full_name']);
-$age = validate_input($_POST['age']);
-$mobile_no = validate_input($_POST['mobile_no']);
-$gender = validate_input($_POST['gender']);
-$temperature = validate_input($_POST['temperature']);
-$vaccinated = validate_input($_POST['vaccinated']);
-$diagnosed = validate_input($_POST['diagnosed']);
-$encountered = validate_input($_POST['encountered']);
-$nationality = validate_input($_POST['nationality']);
-
+$full_name = isset($_POST['full_name']) ? $_POST['full_name'] : 'empty';
+$age = isset($_POST['age']) ? $_POST['age'] : 'empty';
+$mobile_no = isset($_POST['mobile_no']) ? $_POST['mobile_no'] : 'empty';
+$gender = isset($_POST['gender']) ? $_POST['gender'] : 'empty';
+$temperature = isset($_POST['temperature']) ? $_POST['temperature'] : 'empty';
+$vaccinated = isset($_POST['vaccinated']) ? $_POST['vaccinated'] : 'empty';
+$diagnosed = isset($_POST['diagnosed']) ? $_POST['diagnosed'] : 'empty';
+$encountered = isset($_POST['encountered']) ? $_POST['encountered'] : 'empty';
+$nationality = isset($_POST['nationality']) ? $_POST['nationality'] : 'empty';
 
 $sql = "INSERT INTO declaration (full_name, age, gender, mobile_no, temperature, vaccinated, diagnosed, encountered, nationality)" .
     "VALUES ('" . $full_name . "', " .
@@ -32,9 +31,10 @@ $sql = "INSERT INTO declaration (full_name, age, gender, mobile_no, temperature,
     "'" . $mobile_no . "', " .
     "'" . $temperature . "', " .
     "'" . $vaccinated . "', " .
-    "'" . $diagnosed . "')" .
+    "'" . $diagnosed . "', " .
     "'" . $encountered . "', " .
-    "'" . $nationality . "', ";
+    "'" . $nationality . "') ";
+echo $sql;
 
 mysqli_query($connection, $sql);
 
